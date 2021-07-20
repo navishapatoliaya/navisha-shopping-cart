@@ -1,3 +1,3 @@
 export { Product } from "./products";
-// export { ItemList, Item, ItemListStory } from "./items";
+export { Item } from "./item";
 export { Header, Footer } from "./common";

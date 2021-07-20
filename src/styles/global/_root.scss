@@ -1,0 +1,210 @@
+body {
+  background-color: #f2f2f2 !important;
+}
+
+header {
+  margin-bottom: 75px;
+}
+footer {
+  background-color: #343a40 !important;
+  color: #fff;
+  min-height: 50px;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+.main-container,
+.main-container #sticky-sidebar {
+  min-height: 834px;
+}
+.bd-sidebar {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 2rem);
+}
+.productImgThumbnail {
+  height: 200px;
+  width: 200px;
+}
+#productListSort {
+  text-align: right;
+}
+#productListSort select {
+  width: auto;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.react-autosuggest__container {
+  position: relative;
+}
+.react-autosuggest__input {
+  width: calc(100% - 55px);
+  height: 39px;
+  padding: 10px 20px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  float: left;
+  margin-right: 5px;
+}
+.react-autosuggest__input--focused {
+  outline: none;
+}
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  width: calc(100% - 55px);
+  border: 1px solid #aaa;
+  border-top: none;
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+  top: 39px;
+}
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}
+
+.min[data-count]:after {
+  position: absolute;
+  left: 1%;
+  top: 2px;
+  content: attr(data-count);
+  font-size: 10px;
+  /* padding: .2em; */
+  border-radius: 50%;
+  line-height: 15px;
+  color: white;
+  background: rgba(255, 0, 0, 0.85);
+  text-align: center;
+  min-width: 15px;
+  min-height: 15px;
+}
+
+.max[data-count]:after {
+  position: absolute;
+  left: 2%;
+  top: 2px;
+  content: attr(data-count);
+  font-size: 15px;
+  /* padding: .2em; */
+  border-radius: 50%;
+  line-height: 25px;
+  color: white;
+  background: rgba(255, 0, 0, 0.85);
+  text-align: center;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.fa-stack {
+  font-size: inherit !important;
+  height: 20px !important;
+  line-height: 40px !important;
+  vertical-align: top !important;
+}
+
+.product-preview-pic img {
+  height: 500px;
+  width: 500px;
+}
+.product-details {
+  padding: 15px 0px;
+}
+
+a {
+  color: inherit !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+.bd-content .card {
+  text-align: center;
+  min-height: 350px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  padding-top: 45px;
+}
+
+.bd-content .card h5 {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  padding: 20px;
+  font-size: 1.3rem;
+  margin: 0;
+  background: white;
+  resize: horizontal;
+}
+
+.bd-content .card img.img-thumbnail {
+  min-height: 195px;
+  max-height: 195px;
+}
+
+.bd-sidebar button {
+  width: 50px;
+}
+
+.priceTag {
+  font-weight: 600;
+  right: -2px;
+  top: 10px;
+  margin-left: 50px;
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  margin-left: 15px;
+  background: #ffdc40;
+  border-radius: (0 3px 2px 0px);
+  &:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    line-height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #ffdc40 #ffdc40 #ffdc40 transparent;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    width: 120px;
+    left: -35px;
+    height: 4px;
+  }
+}

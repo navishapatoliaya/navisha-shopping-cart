@@ -1,1 +1,1 @@
-export {routes} from "./constants";
+export {routes ,actionTypes} from "./constants";

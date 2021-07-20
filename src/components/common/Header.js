@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { DashboardFilter } from ".";
-// import { Badge } from "../../ui-kit/common-ui-components";
+import { Badge } from "../../ui-kit/common-ui-components";
 import * as routes from "../../lib/constants";
 
 const Header =()=>{
@@ -23,7 +23,7 @@ const Header =()=>{
                 
                 >
                </button> 
-               {/* <DashboardFilter handleApplyClick={handleApplyClick} />
+               <DashboardFilter handleApplyClick={handleApplyClick} />
                 <div
                 className="collapse navbar-collapse justify-content-end"
                 id="navbarToggler"
@@ -39,7 +39,7 @@ const Header =()=>{
                     </Link>
                     </li>
                 </ul>
-                </div> */}
+                </div>
 
            
 
@@ -50,8 +50,8 @@ const Header =()=>{
         </header>
     );
 };
-// Header.ProtoType={
-//     cartData: ProtoType.any,
-//     handleApplyClick: ProtoType.func.isRequired
-// };
+Header.ProtoTypes={
+    cartData: ProtoTypes.any,
+    handleApplyClick: ProtoTypes.func.isRequired
+};
 export default Header;

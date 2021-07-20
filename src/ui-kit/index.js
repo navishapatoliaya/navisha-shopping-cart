@@ -1,9 +1,9 @@
 export {
-    // Input,
-    // Select,
+    Input,
+    Select,
     Button,
-    // Label,
-    // AutosuggestElement,
-    // Badge
+    Label,
+    AutosuggestElement,
+    Badge
   } from "./common-ui-components";
   

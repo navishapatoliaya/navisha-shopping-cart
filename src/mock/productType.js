@@ -1,19 +1,19 @@
 export const productType =[
     {
         id:1,
-        name:"Watch"
+        name:"iwatch"
     },
     {
         id:2,
-        name:"iPad"
+        name:"iPadpro"
     },
     {
         id:3,
-        name:"Headphone"
+        name:"boatrockerz450"
     },
     {
         id:4,
-        name:"AC"
+        name:"Mitshubishi"
     }
 
 

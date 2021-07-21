@@ -5,13 +5,15 @@ import { DashboardFilter } from ".";
 import { Badge } from "../../ui-kit/common-ui-components";
 import * as routes from "../../lib/constants";
 
-const Header =()=>{
+const Header =({cartData,handleApplyClick})=>{
     return(
       
         <header>
                <h1>Header</h1>
             <nav className="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
-            <Link to={"/"}>Acme.com</Link>
+                <span className="navbar-brand">
+                    <Link to={"/"}>Acme.com</Link>
+                </span>
               <button 
                 className="navbar-toggler"
                 type="button"
@@ -50,8 +52,8 @@ const Header =()=>{
         </header>
     );
 };
-Header.ProtoTypes={
-    cartData: ProtoTypes.any,
-    handleApplyClick: ProtoTypes.func.isRequired
+Header.propTypes={
+    cartData: PropTypes.any,
+    handleApplyClick: PropTypes.func.isRequired
 };
 export default Header;

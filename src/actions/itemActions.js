@@ -23,6 +23,7 @@ export const getItems = payload => {
     // Used for Start Fetching Data
     dispatch(getItemsStarted());
 
+
     // Used when get Success Response
     dispatch(getItemsSucceeded(productsData));
 
@@ -32,8 +33,10 @@ export const getItems = payload => {
 };
 
 // Get Item Detail
+
 const getItemDetailStarted = () => ({
-  type: types.GET_ITEM_DETAIL_STARTED
+  type: types.GET_ITEM_DETAIL_STARTED,
+
 });
 
 const getItemDetailSucceeded = data => ({
@@ -48,6 +51,7 @@ const getItemDetailFailed = error => ({
 });
 
 export const getItemDetail = id => {
+ 
   return dispatch => {
     // Used for Start Fetching Data
     dispatch(getItemDetailStarted());

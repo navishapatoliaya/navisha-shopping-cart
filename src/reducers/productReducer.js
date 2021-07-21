@@ -1,5 +1,5 @@
 import * as types from "../lib/constants";
-import initialState from "./initialState";
+import initialState from "./intialState";
 
 const productReducer = (state = initialState.produdctData, action) => {
   switch (action.type) {

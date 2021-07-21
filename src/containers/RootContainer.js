@@ -8,8 +8,8 @@ import { Header,Footer } from '../components/common';
 import { products } from "../mock";
 
 class RootContainer extends Component{
-    constructor(props){
-        super(props);
+    constructor(props,context){
+        super(props,context);
         this.state = {
             carts: props.cartData.carts
           };

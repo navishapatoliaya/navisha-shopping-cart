@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Switch,Route } from "react-router-dom";
 import PropTypes from "prop-types";
 import * as routes from "../lib/constants";
-import { ItemList,Product } from "../components";
+import { ItemList, LoginForm ,RegistrationForm, Product } from "../components";
 
 class DashboardRoutes extends Component {
     render() {
@@ -24,11 +24,31 @@ class DashboardRoutes extends Component {
               exact
               path={routes.CARTS_ROUTE}
               component={this.handleCartList}
+              
+            />
+            <Route 
+                exact path={routes.REGISTRATION_ROUTE}
+                component={this.handleRegistrationList} 
+            />
+            <Route 
+                exact path={routes.LOGIN_ROUTE}
+                component={this.handleloginList} 
             />
           </Switch>
         </div>
       );
     }
+    handleRegistrationList=()=>{
+      return(
+        < RegistrationForm />
+
+      );
+    }
+    handleloginList = () => {
+      return(
+        < LoginForm />
+      );
+    };
   
     handleItemList = () => {
       const { items, handleAddToCart } = this.props;
@@ -53,6 +73,7 @@ class DashboardRoutes extends Component {
       return <Product handleAddToCart={handleAddToCart} />;
     };
   }
+  
   
   DashboardRoutes.propTypes = {
     items: PropTypes.any,

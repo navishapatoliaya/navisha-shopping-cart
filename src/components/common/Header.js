@@ -31,6 +31,16 @@ const Header =({cartData,handleApplyClick})=>{
                 id="navbarToggler"
                 >
                 <ul className="navbar-nav">
+                    <span className="navbar-brand">
+                    <Link to ={routes.REGISTRATION_ROUTE} >
+                        Registration
+                    </Link>{" "}
+                    </span>
+                    <span className="navbar-brand">
+                    <Link to ={routes.LOGIN_ROUTE} >
+                        Login
+                    </Link>{" "}
+                    </span>
                     <li className="nav-item">
                     <Link to={routes.CARTS_ROUTE}>
                         {" "}
@@ -39,6 +49,7 @@ const Header =({cartData,handleApplyClick})=>{
                         <Badge count={cartData.cartCount} />{" "}
                         </span>{" "}
                     </Link>
+                    
                     </li>
                 </ul>
                 </div>

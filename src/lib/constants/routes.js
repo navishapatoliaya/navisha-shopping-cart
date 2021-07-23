@@ -5,3 +5,4 @@ export const ITEM_ROUTE="/item/:id";
 export const BASE_ITEM_ROUTE="/item/";
 export const REGISTRATION_ROUTE="/registration";
 export const LOGIN_ROUTE="/login";
+export const CONTACT_ROUTE="/contact";

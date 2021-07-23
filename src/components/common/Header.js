@@ -41,6 +41,11 @@ const Header =({cartData,handleApplyClick})=>{
                         Login
                     </Link>{" "}
                     </span>
+                    <span className="navbar-brand">
+                    <Link to ={routes.CONTACT_ROUTE} >
+                        Contact Us
+                    </Link>{" "}
+                    </span>
                     <li className="nav-item">
                     <Link to={routes.CARTS_ROUTE}>
                         {" "}

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Switch,Route } from "react-router-dom";
 import PropTypes from "prop-types";
 import * as routes from "../lib/constants";
-import { ItemList, LoginForm ,RegistrationForm, Product } from "../components";
+import { ItemList, LoginForm ,RegistrationForm, Product, Contact} from "../components";
 
 class DashboardRoutes extends Component {
     render() {
@@ -34,10 +34,20 @@ class DashboardRoutes extends Component {
                 exact path={routes.LOGIN_ROUTE}
                 component={this.handleloginList} 
             />
+            <Route
+                exact path={routes.CONTACT_ROUTE}
+                component={this.handleContactList} 
+            />
           </Switch>
         </div>
       );
     }
+    handleContactList=()=>{
+      return(
+        <Contact />
+      );
+
+    };
     handleRegistrationList=()=>{
       return(
         < RegistrationForm />
